@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.3
+- https://www.phpmyadmin.net
+-
+- Servidor: 127.0.0.1
+- Tiempo de generación: 21-11-2018 a las 23:47:58
+- Versión del servidor: 10.1.35-MariaDB
+- Versión de PHP: 7.2.9
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="bd_intergoodil;" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="dueño">
+                CREATE TABLE `dueño` (
+                  `ID_Dueño` int(11) NOT NULL,
+                  `Nombre_Dueño` varchar(50) NOT NULL,
+                  `ApellidoP_Dueño` varchar(50) NOT NULL,
+                  `ApellidoM_Dueño` varchar(50) NOT NULL,
+                  `Contraseña_Dueño` varchar(50) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="empleados">
+                CREATE TABLE `empleados` (
+                  `ID_Empleado` int(11) NOT NULL,
+                  `Nombre_Empleado` varchar(50) NOT NULL,
+                  `ApellidoP_Empleado` varchar(50) NOT NULL,
+                  `ApellidoM_Empleado` varchar(50) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="inventario">
+                CREATE TABLE `inventario` (
+                  `Codigo_Producto` int(11) NOT NULL,
+                  `Descripcion_Producto` varchar(50) NOT NULL,
+                  `Precio_Compra` int(11) NOT NULL,
+                  `Precio_Venta` int(11) NOT NULL,
+                  `Stock_Actual` int(11) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="ventas">
+                CREATE TABLE `ventas` (
+                  `ID_Venta` int(11) NOT NULL,
+                  `ID_Empleado` int(11) NOT NULL,
+                  `Día_Venta` int(50) NOT NULL,
+                  `Mes_Venta` int(50) NOT NULL,
+                  `Año_Venta` int(50) NOT NULL,
+                  `Hora_Venta` int(25) NOT NULL,
+                  `Cantidad_Vendida` int(11) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Base de datos: 'bd_intergoodil;'
+    -->
+    <database name="bd_intergoodil;">
+        <!-- Tabla dueño -->
+        <table name="dueño">
+            <column name="ID_Dueño">1</column>
+            <column name="Nombre_Dueño">Victor</column>
+            <column name="ApellidoP_Dueño">Ortiz</column>
+            <column name="ApellidoM_Dueño">Dominguez</column>
+            <column name="Contraseña_Dueño">abcd123</column>
+        </table>
+        <!-- Tabla empleados -->
+        <table name="empleados">
+            <column name="ID_Empleado">1</column>
+            <column name="Nombre_Empleado">Sayrus</column>
+            <column name="ApellidoP_Empleado">Martínez</column>
+            <column name="ApellidoM_Empleado">Chávez</column>
+        </table>
+        <table name="empleados">
+            <column name="ID_Empleado">2</column>
+            <column name="Nombre_Empleado">Álan </column>
+            <column name="ApellidoP_Empleado">Martínez</column>
+            <column name="ApellidoM_Empleado">Chávez</column>
+        </table>
+        <table name="empleados">
+            <column name="ID_Empleado">3</column>
+            <column name="Nombre_Empleado">Norma</column>
+            <column name="ApellidoP_Empleado">Ortíz</column>
+            <column name="ApellidoM_Empleado">López</column>
+        </table>
+        <table name="empleados">
+            <column name="ID_Empleado">4</column>
+            <column name="Nombre_Empleado">Diego</column>
+            <column name="ApellidoP_Empleado">Montañez</column>
+            <column name="ApellidoM_Empleado">Pérez</column>
+        </table>
+        <table name="empleados">
+            <column name="ID_Empleado">5</column>
+            <column name="Nombre_Empleado">Juancho</column>
+            <column name="ApellidoP_Empleado">Juanchola</column>
+            <column name="ApellidoM_Empleado">Padre</column>
+        </table>
+        <!-- Tabla inventario -->
+        <table name="inventario">
+            <column name="Codigo_Producto">17</column>
+            <column name="Descripcion_Producto">Fuze Tea 600 ml</column>
+            <column name="Precio_Compra">10</column>
+            <column name="Precio_Venta">16</column>
+            <column name="Stock_Actual">54</column>
+        </table>
+        <table name="inventario">
+            <column name="Codigo_Producto">18</column>
+            <column name="Descripcion_Producto">Danonino </column>
+            <column name="Precio_Compra">5</column>
+            <column name="Precio_Venta">7</column>
+            <column name="Stock_Actual">24</column>
+        </table>
+        <table name="inventario">
+            <column name="Codigo_Producto">20</column>
+            <column name="Descripcion_Producto">Chicles Clorets</column>
+            <column name="Precio_Compra">1</column>
+            <column name="Precio_Venta">2</column>
+            <column name="Stock_Actual">34</column>
+        </table>
+        <table name="inventario">
+            <column name="Codigo_Producto">21</column>
+            <column name="Descripcion_Producto">Fanta 600 ml</column>
+            <column name="Precio_Compra">9</column>
+            <column name="Precio_Venta">12</column>
+            <column name="Stock_Actual">65</column>
+        </table>
+        <table name="inventario">
+            <column name="Codigo_Producto">22</column>
+            <column name="Descripcion_Producto">Sprite 600 ml</column>
+            <column name="Precio_Compra">9</column>
+            <column name="Precio_Venta">12</column>
+            <column name="Stock_Actual">42</column>
+        </table>
+        <table name="inventario">
+            <column name="Codigo_Producto">23</column>
+            <column name="Descripcion_Producto">Arizona 680 ml</column>
+            <column name="Precio_Compra">12</column>
+            <column name="Precio_Venta">15</column>
+            <column name="Stock_Actual">28</column>
+        </table>
+        <table name="inventario">
+            <column name="Codigo_Producto">24</column>
+            <column name="Descripcion_Producto">Gansito</column>
+            <column name="Precio_Compra">7</column>
+            <column name="Precio_Venta">9</column>
+            <column name="Stock_Actual">10</column>
+        </table>
+        <table name="inventario">
+            <column name="Codigo_Producto">25</column>
+            <column name="Descripcion_Producto">Donitas</column>
+            <column name="Precio_Compra">9</column>
+            <column name="Precio_Venta">11</column>
+            <column name="Stock_Actual">35</column>
+        </table>
+        <table name="inventario">
+            <column name="Codigo_Producto">45</column>
+            <column name="Descripcion_Producto">Doritos Rojos</column>
+            <column name="Precio_Compra">12</column>
+            <column name="Precio_Venta">14</column>
+            <column name="Stock_Actual">23</column>
+        </table>
+        <table name="inventario">
+            <column name="Codigo_Producto">46</column>
+            <column name="Descripcion_Producto">Doritos Negros</column>
+            <column name="Precio_Compra">12</column>
+            <column name="Precio_Venta">14</column>
+            <column name="Stock_Actual">16</column>
+        </table>
+        <table name="inventario">
+            <column name="Codigo_Producto">48</column>
+            <column name="Descripcion_Producto">Coca Cola 600 ml</column>
+            <column name="Precio_Compra">8</column>
+            <column name="Precio_Venta">12</column>
+            <column name="Stock_Actual">18</column>
+        </table>
+        <table name="inventario">
+            <column name="Codigo_Producto">15</column>
+            <column name="Descripcion_Producto">Galletas Ale</column>
+            <column name="Precio_Compra">10</column>
+            <column name="Precio_Venta">15</column>
+            <column name="Stock_Actual">35</column>
+        </table>
+        <table name="inventario">
+            <column name="Codigo_Producto">89</column>
+            <column name="Descripcion_Producto">Bonice Fresa</column>
+            <column name="Precio_Compra">3</column>
+            <column name="Precio_Venta">6</column>
+            <column name="Stock_Actual">38</column>
+        </table>
+        <!-- Tabla ventas -->
+    </database>
+</pma_xml_export>
