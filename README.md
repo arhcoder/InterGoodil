@@ -1,29 +1,56 @@
-# | InterGoodil |
+# InterGoodil;
 
-Software de Punto de Venta, diseñado para gestionar fácilmente las facetas de un negocio,
-tales como: Inventario, Empleados, Ventas o Estadísticas.
+## Descripción
 
-* github.com/arhcoder/InterGoodil/
-__________________________________________________________________________________________
+🖥 Software de Punto de Venta de escritorio diseñado para gestionar fácilmente las facetas principales de un negocio, tales como: Inventarios, Empleados, Ventas o Estadísticas. Bajo una interfaz intuitiva, permite registrar en una base de datos, todos los cambios hechos en sobre dichas facetas.
+____
 
-# CRÉDITOS:
 
-Desarrolladores:
-  * Alejandro Ramos Herrera (@arhcoder).
+## Acerca de
+
+📅 **Fecha de inicio:** Noviembre de 2018.
+
+✅ **Última actualización:** Diciembre de 2018.
+
+✅ **Estado:** Finalizado.
+
+❓ **Propósito:** Resolver problemática.
+___
+
+
+## Créditos
+
+💻 **Programación:**
+  * Alejandro Ramos Herrera **(@arhcoder).**
   * Andrés Pérez Collazo.
   * Rafael Palacios Jiménez.
 
-Imágenes utilizadas:
-  * Icons made by Mercado de Vectores from Flaticon (https://www.flaticon.com).
-__________________________________________________________________________________________
+🎨 **Gráficos:**
+  * Icons made by Mercado de Vectores from **[Flaticon](https://www.flaticon.com)**.
+___
 
-# LICENSE:
-  * Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
-__________________________________________________________________________________________
 
-# ACERCA DE:
+## Tecnologías
 
-Desarrollado en noviembre de 2018.
-Tiempo de desarrollo: 1 mes.
-Propósito: Práctica.
-__________________________________________________________________________________________
+❄ **Lenguajes:**
+ * Java.
+ * SQL.
+ 
+🧰 **Entornos:**
+ * NetBeans IDE 8.2.
+ * XAMPP Control Panel.
+
+🛠 **Herramientas:**
+ * LucidChart.
+___
+
+
+## Detalles
+
+🔰 ...
+___
+
+
+## Licencia
+
+📝 Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
